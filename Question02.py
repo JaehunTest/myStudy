@@ -20,24 +20,26 @@ for i in range(n):
         elif A[i][j] == 2:
             stores.append((i, j))
 stores_TF = [False] * len(stores)
-# 3 1
-# 1 0 0
-# 0 2 2
-# 0 1 0
 
-# 1 HOWSE, 2 STORE
+# def cal_dist():
+#     res = 0
+#     for i, j in houses:             # 각 아파트 마다 편의점의 거리를 계산하여 가장 짧은거리 합
+#         min_dist = INF
+#         for k in range(len(stores)):
+#             if stores_TF[k]:
+#                 min_dist = min(min_dist, abs(stores[k][0]-i)+abs(stores[k][1]-j))
+#         res += min_dist
 
-def cal_dist():
-    res = 0
-    for i, j in houses:             # 각 아파트 마다 편의점의 거리를 계산하여 가장 짧은거리 합
-        min_dist = INF
+#     return res
+def claculator_dist():
+    result = 0
+    for i, j in houses:
+        minimum_dist = math.inf
         for k in range(len(stores)):
             if stores_TF[k]:
-                min_dist = min(min_dist, abs(stores[k][0]-i)+abs(stores[k][1]-j))
-        res += min_dist
-
-    return res
-
+                minimum_dist = min(minimum_dist, abs(stores[k][0]-i)+abs(stores[k][1]-j))
+        res += minimum_dist
+        
 def sol(cnt):
     global min_val
 
