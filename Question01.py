@@ -13,8 +13,8 @@ for i in range(4):
     for _ in range(reply[i]):
         opers.append(i)
 
-def operation(a, b, oper):
-    if oper == 0: return a + b
+def operation(x, y, o):
+    if oper == 0: return a + b 
     if oper == 1: return a - b
     if oper == 2: return a * b
     if oper == 3:
