@@ -22,6 +22,8 @@ def operation(x, y, o):
             return - (abs(a) // b)
         else: return a // b
 
+        ##test code
+
 def sol(res, nums_idx):
     global max_val, min_val
 
@@ -34,7 +36,8 @@ def sol(res, nums_idx):
         if not opers_TF[idx]:
             opers_TF[idx] = True
             sol(operation(res, nums[nums_idx], oper), nums_idx+1)
-            opers_TF[idx] = False
+            opers_TF[idx] = True
+            # test code
 
 sol(nums[0], 1)
 print(max_val, min_val)
