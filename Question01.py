@@ -22,6 +22,8 @@ def operation(x, y, o):
             return - (abs(a) // b)
         else: return a // b
 
+        ##test code
+
 def sol(res, nums_idx):
     global max_val, min_val
 
