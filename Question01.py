@@ -37,6 +37,7 @@ def sol(res, nums_idx):
             opers_TF[idx] = True
             sol(operation(res, nums[nums_idx], oper), nums_idx+1)
             opers_TF[idx] = True
+            # test code
 
 sol(nums[0], 1)
 print(max_val, min_val)
