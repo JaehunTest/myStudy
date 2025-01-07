@@ -12,6 +12,7 @@ E_TF = [False] * n
 
 min_val = INF
 ## 공평하게 절반씩 나누어 진행
+## test feature add4
 
 def cal_eff():
     a_eff = 0
