@@ -5,7 +5,7 @@ sys.setrecursionlimit(10**7)
 import math
 from copy import deepcopy
 INF = math.inf
-
+#asdasdas
 moves = [
     [],
     [-1, 0], [-1, -1], [0, -1], [1, -1],   # ↑, ↖, ←, ↙
